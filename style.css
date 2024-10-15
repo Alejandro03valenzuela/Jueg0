@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 80vw;  /* Se ajusta al 80% del ancho de la ventana */
+    height: 40vh; /* Se ajusta al 40% de la altura de la ventana */
+    max-width: 800px;  /* Ancho máximo para pantallas grandes */
+    max-height: 400px; /* Altura máxima */
+    background-color: #555;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.player {
+    position: absolute;
+    bottom: 0;
+    left: 5%;  /* Ajustado a un porcentaje para que sea responsivo */
+    width: 5%;  /* 5% del ancho del contenedor */
+    height: 10%; /* 10% de la altura del contenedor */
+    background-color: cyan;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3%;  /* 3% del ancho del contenedor */
+    height: 15%; /* 15% de la altura del contenedor */
+    background-color: red;
+}
+
+.score {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+}
